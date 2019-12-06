@@ -5,7 +5,7 @@ engine = create_engine(dburl)
 
 try:
     cursor  = engine.connect()
-    sql = "select * from customer"
+    sql = "select * from tb_customer"
     results = cursor.execute(sql)
     for result in results:
         print( "id : %d, name : %s, age : %d" % ( result[0], result[1], result[2]))
