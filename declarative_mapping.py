@@ -5,6 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 my_base = declarative_base()
 
 # define table
+
 class Student(my_base):
     __tablename__ = 'tb_student'
 
@@ -18,6 +19,8 @@ class Student(my_base):
     __table_args__ = (
         PrimaryKeyConstraint('id'),
     )
+
+
 
 if __name__ == '__main__':
     dburl = 'postgresql://supriadi:190277@localhost:5432/test123'

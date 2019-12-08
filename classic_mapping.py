@@ -12,9 +12,9 @@ tb_user = Table( 'tb_user', meta,
                     )
 
 class User:
-    def __init__(self, name, password):
+    def __init__(self, name, age):
         self.name = name
-        self.password = password
+        self.age = age
 
 mapper(User, tb_user)
 
