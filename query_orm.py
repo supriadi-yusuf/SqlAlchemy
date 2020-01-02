@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 from classic_mapping import User 
 
-db_url = 'postgresql://supriadi:190277@localhost:5432/test123'
+db_url = 'postgresql://scott:tiger@localhost:5432/test123'
 engine = create_engine(db_url)
 
 session = sessionmaker(engine)

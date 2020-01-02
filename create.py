@@ -9,7 +9,7 @@ suharto = User(name='suharto', age=20)
 mulyono = Student( name='mulyono', age=10)
 heri = User( name='heri', age=15)
 
-db_url = "postgresql://supriadi:190277@localhost:5432/test123"
+db_url = 'postgresql://scott:tiger@localhost:5432/test123'
 engine = create_engine(db_url)
     
 session = sessionmaker(bind=engine)
